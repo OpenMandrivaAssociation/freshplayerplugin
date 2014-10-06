@@ -3,7 +3,7 @@
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
 Version:	0
-Release:	0.%{git}.1
+Release:	0.%{git}.2
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
@@ -28,12 +28,14 @@ BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	cmake
+Requires:	chromium-browser-pepper-flash
 
 %description
 Ppapi2npapi compatibility layer.
 
 %files
 %{_libdir}/mozilla/plugins/*.so*
+%{_libdir}/PepperFlash
 
 #----------------------------------------------------------------------------
 
@@ -47,5 +49,9 @@ Ppapi2npapi compatibility layer.
 %install
 mkdir -p %{buildroot}%{_libdir}/mozilla/plugins
 cp build/libfreshwrapper-pepperflash.so %{buildroot}%{_libdir}/mozilla/plugins/
+mkdir -p %{buildroot}/usr/lib/
+pushd %{buildroot}%{_libdir}
+ln -s chromium-browser/PepperFlash PepperFlash
+popd
 
 
