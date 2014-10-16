@@ -1,4 +1,4 @@
-%define git 20140903
+%define git 20140925
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	cmake
+BuildRequires:	ragel
 Requires:	chromium-browser-pepper-flash
 
 %description
@@ -40,9 +41,10 @@ Ppapi2npapi compatibility layer.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}
+%setup -qn %{name}-%{git}
 
 %build
+export LDFLAGS="%{optflags} -lrt"
 %cmake
 %make
 
