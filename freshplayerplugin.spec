@@ -25,6 +25,7 @@ BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	cmake
 BuildRequires:	ragel
 
