@@ -1,4 +1,4 @@
-%define git 20150113
+%define git 20150114
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
@@ -25,6 +25,7 @@ BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-2.0)
+BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	cmake
 BuildRequires:	ragel
 
@@ -37,7 +38,7 @@ Ppapi2npapi compatibility layer.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}
+%setup -qn %{name}-%{git}
 
 %build
 %cmake
