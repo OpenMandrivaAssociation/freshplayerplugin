@@ -1,8 +1,8 @@
-%define git 20140903
+%define git 20150113
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0
+Version:	0.2.2
 Release:	0.%{git}.1
 License:	MIT
 Group:		Networking/WWW
@@ -26,6 +26,7 @@ BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	cmake
+BuildRequires:	ragel
 
 %description
 Ppapi2npapi compatibility layer.
