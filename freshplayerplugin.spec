@@ -38,7 +38,7 @@ Ppapi2npapi compatibility layer.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}
+%setup -qn %{name}-%{git}
 
 %build
 %cmake
