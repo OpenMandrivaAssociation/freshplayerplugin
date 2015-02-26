@@ -7,7 +7,7 @@ Release:	1.%{git}.1
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
-Source0:	%{name}-%{git}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(glib-2.0)
