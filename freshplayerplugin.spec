@@ -1,13 +1,13 @@
-%define git 20150114
+%define git 20150216
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0.2.2
+Version:	0.2.3
 Release:	1.%{git}.1
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
-Source0:	%{name}-%{git}.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(glib-2.0)
@@ -40,7 +40,7 @@ Ppapi2npapi compatibility layer.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}-%{git}
+%setup -qn %{name}-%{version}
 
 %build
 export LDFLAGS="%{optflags} -lrt"
