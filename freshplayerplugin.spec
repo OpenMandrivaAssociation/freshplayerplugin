@@ -1,4 +1,4 @@
-%define git 20150114
+%define git 20150216
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
