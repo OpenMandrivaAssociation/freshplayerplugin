@@ -2,7 +2,7 @@
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0.2.2
+Version:	0.2.3
 Release:	1.%{git}.1
 License:	MIT
 Group:		Networking/WWW
