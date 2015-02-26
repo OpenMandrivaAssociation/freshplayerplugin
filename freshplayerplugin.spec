@@ -40,7 +40,7 @@ Ppapi2npapi compatibility layer.
 #----------------------------------------------------------------------------
 
 %prep
-%setup -qn %{name}-%{git}
+%setup -qn %{name}-%{version}
 
 %build
 export LDFLAGS="%{optflags} -lrt"
