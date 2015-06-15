@@ -1,9 +1,7 @@
-%define git 20150216
-
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0.2.3
-Release:	1.%{git}.1
+Version:	0.3.0
+Release:	1
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
@@ -15,6 +13,7 @@ BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xinerama)
 BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(glesv2)
+BuildRequires:	pkgconfig(libva-x11)
 BuildRequires:	pkgconfig(liburiparser)
 BuildRequires:	pkgconfig(libconfig)
 BuildRequires:	pkgconfig(libevent)
@@ -26,8 +25,12 @@ BuildRequires:	pkgconfig(pangoft2)
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gtk+-2.0)
 BuildRequires:	pkgconfig(libpulse)
+BuildRequires:	pkgconfig(libv4l2)
+BuildRequires:  pkgconfig(libavcodec)
+BuildRequires:  pkgconfig(libavutil)
 BuildRequires:	cmake
 BuildRequires:	ragel
+
 Requires:	chromium-pepper-flash
 
 %description
@@ -53,4 +56,3 @@ cp build/libfreshwrapper-pepperflash.so %{buildroot}%{_libdir}/mozilla/plugins/
 pushd %{buildroot}%{_libdir}
 ln -s chromium/PepperFlash PepperFlash
 popd
-
