@@ -1,9 +1,8 @@
-%define git 20150216
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0.2.3
-Release:	1.%{git}.1
+Version:	0.3.0
+Release:	1
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin

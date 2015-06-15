@@ -1,5 +1,6 @@
 removed_sources:
+  freshplayerplugin-0.2.3.tar.gz: db44b49fbcca6875328ec18802041bf7cd8c1570
   freshplayerplugin-20140903.tar.gz: 0047c4894fcc21e2f6eb092320c6226cfe3edb72
   freshplayerplugin-20150114.tar.gz: 7cfc5b283aab4db9b458d08a19d17108aa9ba543
 sources:
-  freshplayerplugin-0.2.3.tar.gz: db44b49fbcca6875328ec18802041bf7cd8c1570
+  freshplayerplugin-0.3.0.tar.gz: e0a5897942c26e05294f42a894347768bccb1b41
