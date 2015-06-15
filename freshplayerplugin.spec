@@ -1,3 +1,4 @@
+
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
 Version:	0.3.0
@@ -56,3 +57,4 @@ cp build/libfreshwrapper-pepperflash.so %{buildroot}%{_libdir}/mozilla/plugins/
 pushd %{buildroot}%{_libdir}
 ln -s chromium/PepperFlash PepperFlash
 popd
+
