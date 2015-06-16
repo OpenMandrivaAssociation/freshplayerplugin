@@ -2,7 +2,7 @@
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
 Version:	0.3.0
-Release:	3
+Release:	4
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
@@ -31,6 +31,8 @@ BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavutil)
 BuildRequires:	cmake
 BuildRequires:	ragel
+
+Requires:	chromium-pepper-flash
 
 Conflicts:	%{name} < %{EVRD}
 
