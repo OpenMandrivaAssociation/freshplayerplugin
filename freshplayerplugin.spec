@@ -32,6 +32,8 @@ BuildRequires:  pkgconfig(libavutil)
 BuildRequires:	cmake
 BuildRequires:	ragel
 
+Requires:	chromium-pepper-flash
+
 Conflicts:	%{name} < %{EVRD}
 
 %description
