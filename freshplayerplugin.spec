@@ -29,6 +29,7 @@ BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(libv4l2)
 BuildRequires:  pkgconfig(libavcodec)
 BuildRequires:  pkgconfig(libavutil)
+BuildRequires:	pkgconfig(vdpau)
 BuildRequires:	cmake
 BuildRequires:	ragel
 
