@@ -1,8 +1,8 @@
 
 Summary:	Ppapi2npapi compatibility layer
 Name:		freshplayerplugin
-Version:	0.3.2
-Release:	2
+Version:	0.3.3
+Release:	1
 License:	MIT
 Group:		Networking/WWW
 Url:		https://github.com/i-rinat/freshplayerplugin
@@ -16,7 +16,6 @@ BuildRequires:	pkgconfig(egl)
 BuildRequires:	pkgconfig(glesv2)
 BuildRequires:	pkgconfig(libva-x11)
 BuildRequires:	pkgconfig(liburiparser)
-BuildRequires:	pkgconfig(libconfig)
 BuildRequires:	pkgconfig(libevent)
 BuildRequires:	pkgconfig(libevent_pthreads)
 BuildRequires:	pkgconfig(cairo)
@@ -56,7 +55,7 @@ export LDFLAGS="%{optflags} -lrt"
 
 %install
 mkdir -p %{buildroot}%{_libdir}/mozilla/plugins
-cp build/libfreshwrapper-pepperflash.so %{buildroot}%{_libdir}/mozilla/plugins/
+cp build/libfreshwrapper-flashplayer.so %{buildroot}%{_libdir}/mozilla/plugins/
 pushd %{buildroot}%{_libdir}
 ln -s chromium/PepperFlash PepperFlash
 popd
