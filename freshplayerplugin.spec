@@ -49,6 +49,12 @@ Ppapi2npapi compatibility layer.
 %setup -qn %{name}-%{version}
 
 %build
+%ifarch %ix86
+# i586 segfaults with clang
+export CC=gcc
+export CXX=g++
+%endif
+
 export LDFLAGS="%{optflags} -lrt"
 %cmake
 %make
